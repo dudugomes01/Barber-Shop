@@ -1,0 +1,368 @@
+:root{
+    --color-primary: #917758;
+    --color-segundary: #3c2915;
+    --color-primary-light: #f5eee6;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+   font-family: 'Poppins', sans-serif;;
+}
+.container{
+    
+    width: 1170px;
+    margin: 0 auto;
+}
+/**********
+    HOME
+***********/
+.home{   
+    position: relative;
+    background-size: cover;
+    background-image: url(../img/bg-home.jpg);
+    background-attachment: fixed;
+    height: 100vh;
+}
+.home .header .nav{
+    display: flex;
+    justify-content: center;
+}
+.home .header .nav ul{
+    margin-top: 30px;
+    display: flex;
+    list-style: none;
+}
+.home .header .nav ul li{
+    display: flex;
+    align-items: center;
+    width: 150px;
+    justify-content: center;
+}
+.home .header .nav ul li a{
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 12px;
+    padding:20px;
+}
+.home .header .nav ul li a:hover{
+    border-bottom: 2px solid var(--color-primary);
+    color: var(--color-primary);
+}
+.header .nav .logo{
+    margin: 0 30px;
+}
+
+/****************
+   HOME- BANNER
+*****************/
+.home .banner{
+    position: relative;
+    height: 270px;
+    width: 770px;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    margin-left: -385px;
+    margin-top: -275px;
+    color: rgb(255, 255, 255);
+    
+}
+.home .banner span:first-child{
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 14px;
+    color: var(--color-primary);
+}
+.home .banner h1{
+    font-size: 120px;
+}
+.slogan2{
+    margin-bottom: 10px;
+}
+.home .banner span{
+    display: block;
+}
+/***********
+   ABOUT
+************/
+.about{
+     
+    background-color: var(--color-primary);
+}
+.about .container{
+    display: flex;
+}
+.about .timing{
+    position: relative;
+    margin-top: -50px;
+    width: 33%;
+    background-image: url(/img/brush-big.jpg);
+    padding: 20px;
+}
+.about .timing .overlay{
+    text-align: center;
+    background-color: rgb(0, 0, 0 , 0.8);
+    padding: 40px 20px;
+}
+.about .timing .icon-cut{
+    margin-top: 10px;
+    width: 50px;
+}
+.about .timing h3{
+    color: var(--color-primary);
+    font-size: 30px;
+    border-bottom: 2px solid var(--color-primary);  
+     width: fit-content;
+     margin: 0 auto 30px auto;
+}
+.about .timing .text{
+    margin: 10px 0;
+}
+.about .timing .text:after{
+    content: '•';
+    display: block;
+    font-size: 25px;
+    color: rgb(255, 255, 255);
+    margin-top: 10px;
+}
+.about .timing .text:last-of-type::after{
+    content: '|';
+    display: block;
+}
+.about .timing .text h4{
+    color: grey;
+    font-weight: 400;
+    font-size: 15px;
+    
+}
+.about .timing span{
+    color: white;
+    font-size: 15px;
+    display: block;
+}
+
+
+.about .experience{
+    margin-left: 7%;
+    margin-top: 100px;
+    width: 66%;
+    color: white;
+}
+.about .experience h2{
+    font-weight: 400;
+    font-size: 40px;
+}
+.about .experience h2::after{
+    display: block;
+    content: '';
+    width: 100px;
+    height: 3px;
+    background-color: #a38f78;
+    margin: 20px 0;
+}
+.about .experience .text {
+    display: flex;
+    justify-content: space-between;
+}
+.about .experience .text p {
+    margin-bottom: 20px;
+    font-weight: 100;
+    font-size: 17px;
+}
+/***********
+   Services
+************/
+.services{
+    background-color: var(--color-primary-light);
+    padding: 100px 0;
+    text-align: center;
+
+}
+.services h2{
+    color: var(--color-segundary);
+    font-weight: 400;
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+.services .boxes {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+.services .box{
+    border: 3px solid var(--color-primary);
+    padding: 50px 40px;
+    margin: 30px;
+}
+.services .box h4{
+    color: var(--color-segundary);
+    margin-top: 30px;
+}
+.services .box p{
+    margin-top: 20px;
+    font-size: 14px;
+    line-height: 25px;
+}
+/**************
+   appointment
+***************/
+.appointment{
+    padding: 100px 0;   
+    background-color: var(--color-primary);
+    height: 100vh;
+    background-image: url(/img/chair-ic.png);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-size: 300px;
+}
+.appointment h2{
+    color: var(--color-primary-light);
+    text-align: center;
+    font-weight: 400;
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+.appointment img{
+    margin: 0 auto;
+    display: block;
+}
+.appointment form{
+    margin-top: 80px;
+}
+.appointment .personal-data{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.appointment .personal-data .input-wrapper{
+    width: 100%;
+    margin-right: 50px;
+}
+.appointment .personal-data .input-wrapper:last-of-type{
+    margin-right: 0;
+}
+.appointment label{
+    display: block;
+    font-size: 14px;
+    margin-bottom: 2px;
+    color: var(--color-primary-light);
+}
+.appointment .personal-data input,
+.appointment .personal-data select,
+.appointment textarea{
+    padding: 10px;
+    outline: none;
+    border: none;
+    width: 100%;
+    border-radius: 3px;
+}
+.appointment textarea{
+    height: 100px;
+}
+.appointment button{
+    background-color: var(--color-segundary);
+    color: white;
+    padding: 15px 40px;
+    margin-top: 10px;
+    border: none;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+/**************
+   gallery
+***************/
+.gallery{
+    padding: 100px 0 0 0;   
+    background-color: var(--color-primary-light);
+  
+}
+.gallery h2{
+    color: var(--color-segundary);
+    text-align: center;
+    font-weight: 400;
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+.gallery img{
+    margin: 0 auto;
+    display: block;
+}
+.gallery .gallery-wrapper{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 900px;
+    height: 100vh;
+    margin: 50px auto;
+
+}
+.gallery .gallery-wrapper div{
+    border: 10px solid var(--color-primary);
+    margin: 6px;
+    width: 33%;
+}
+.gallery .gallery-wrapper div img{
+    width: 100%;
+}
+/**************
+   location
+***************/
+.location{
+    
+    padding: 100px 0;
+    background-image: url(/img/bg-location.jpg);
+    background-size: cover;
+}
+.location .head{
+    display: flex;
+    justify-content: space-between;
+    background-color: #191919;
+    padding: 40px;
+    width: 100%;
+}
+.location .head .info{
+    display: flex;
+    align-items: center;
+}
+.location .head .info .icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--color-primary);
+    border-radius: 100%;
+    padding: 10px;
+    width: 40px;
+    height: 40px;
+    margin-right: 15px;
+}
+.location .head .info span{
+    display: block;
+    font-size: 13px;
+}
+.location .head .info span:first-child{
+    color: silver;
+}
+.location .head .info span:last-child{
+    color: white;
+}
+.location .map{
+    width: 100%;
+}
+.location .map iframe{
+    width: 100%;
+}
+/**************
+     Footer
+***************/
+.footer{
+    background-color: #191919;
+    color: white;
+    padding: 40px;
+    text-align: center;
+    font-size: 12px;
+}
